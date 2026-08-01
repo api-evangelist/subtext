@@ -1,7 +1,24 @@
 aid: subtext
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/subtext.png
 name: Subtext *
-description: 'Subtext * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Subtext was a consumer/education social-reading and in-text annotation
+  app backed by GV (listed in GV''s portfolio with an asterisk denoting an exited investment).
+  It has since been acquired: as of this enrichment pass the company domain subtext.com
+  301-redirects to renaissance.com (Renaissance Learning), and no independent website,
+  developer portal, API, documentation, or /.well-known/security.txt could be found.
+  No public API surface exists to enrich; this profile records the verified exit/redirect
+  status and a domain-security probe of subtext.com.'
 url: https://raw.githubusercontent.com/api-evangelist/subtext/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +26,16 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-evidence: 'subtext.com 301 -> renaissance.com; GV portfolio lists "Subtext *" (asterisk = exited)'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Education
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/subtext-domain-security.yml
 - type: Website
   url: http://subtext.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
