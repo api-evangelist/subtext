@@ -31,6 +31,9 @@ description: 'Subtext was a consumer/education social-reading and in-text annota
   No public API surface exists to enrich; this profile records the verified exit/redirect
   status and a domain-security probe of subtext.com.'
 url: https://raw.githubusercontent.com/api-evangelist/subtext/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "No public API surface exists to enrich; this profile records the verified exit/redirect status and a domain-security probe of subtext.com."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
