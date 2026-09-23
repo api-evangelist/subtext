@@ -1,0 +1,26 @@
+# Front Door AI Index — subtext — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: subtext
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: subtext.com
+  final_host: www.renaissance.com
+  ownership: inherited
+  owner: subtext
+  shares_host_with: null
+  inherited_from: www.renaissance.com
+  verdict: scored
+  score: null
+  host_score: 8
+  density: null
+  words: 1243
+  tiers:
+    agentic: 0
+    core: 8
+    model: 0
+  ambiguous: 7
+  top_terms:
+    AI: 8
+    intelligence: 7
